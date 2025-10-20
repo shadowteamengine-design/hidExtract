@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HidExtract - Hidden Archive System</title>
+    <link rel="icon" type="image/png" href="image.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    
+    <header>
+        <div class="container">
+            <img src="image.png" alt="HidExtract Logo" class="logo">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="glitch" data-text="HidExtract">HidExtract</h1>
+            <div class="tagline">HIDDEN ARCHIVE SYSTEM</div>
+            <div class="subtitle">Revolutionary HIDS format that annihilates ZIP, RAR, and 7z</div>
+            
+            <div class="download-section">
+                <a href="HidExtract_Setup.exe" class="download-btn" id="downloadBtn">
+                    <span>DOWNLOAD HIDEXTRACT</span>
+                    <div class="download-stats">
+                        <div class="stat">v1.0.0</div>
+                        <div class="stat">Windows x64</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">DOMINATION FEATURES</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-feature="hids">
+                    <div class="feature-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="9" cy="9" r="2"/>
+                            <path d="m21 15-3.086-3.086a2 2 0 0 0-1.414-.586H14l-2.5-2.5"/>
+                        </svg>
+                    </div>
+                    <h3>HIDS FORMAT</h3>
+                    <p>Proprietary Hidden Integrated Data Storage format engineered for maximum performance and security. Superior compression ratios with lightning extraction.</p>
+                </div>
+                
+                <div class="feature-card" data-feature="hybrid">
+                    <div class="feature-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>DUAL INTERFACE</h3>
+                    <p>Powerful OpenGL GUI for visual operations and hardcore CLI for automation. Built for both casual users and power users who demand control.</p>
+                </div>
+                
+                <div class="feature-card" data-feature="advanced">
+                    <div class="feature-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                            <path d="M12 3v18"/>
+                        </svg>
+                    </div>
+                    <h3>ADVANCED ENGINE</h3>
+                    <p>Multi-algorithm compression with CRC32 validation, extensible architecture, and future-ready design for next-generation archive formats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="performance">
+        <div class="container">
+            <h2 class="section-title">PERFORMANCE METRICS</h2>
+            <div class="performance-grid">
+                <div class="metric-card">
+                    <div class="metric-value">47%</div>
+                    <div class="metric-label">Better Compression</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">3.2x</div>
+                    <div class="metric-label">Faster Extraction</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">0ms</div>
+                    <div class="metric-label">Format Detection</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">∞</div>
+                    <div class="metric-label">Future Potential</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-specs">
+        <div class="container">
+            <h2 class="section-title">TECHNICAL ARSENAL</h2>
+            
+            <div class="spec-grid">
+                <div class="spec-item">
+                    <strong>Format:</strong> HIDS v1.0 (Hidden Integrated Data Storage)
+                </div>
+                <div class="spec-item">
+                    <strong>Compression:</strong> STORE, ZLIB, LZMA, BROTLI, Custom LZ
+                </div>
+                <div class="spec-item">
+                    <strong>Interface:</strong> OpenGL GUI + Command Line
+                </div>
+                <div class="spec-item">
+                    <strong>Platform:</strong> Windows 10/11 (x64)
+                </div>
+                <div class="spec-item">
+                    <strong>Engine:</strong> Custom C++ Archive Engine
+                </div>
+                <div class="spec-item">
+                    <strong>UI Framework:</strong> PinnapleUI (OpenGL-based)
+                </div>
+            </div>
+
+            <h3 class="cli-title">COMMAND LINE WARFARE</h3>
+            <div class="cli-demo" id="cliDemo">
+                <div class="cli-line">
+                    <span class="prompt">C:\></span> 
+                    <span class="command">hidextract.exe -c myarchive.hids file1.txt file2.txt</span>
+                </div>
+                <div class="cli-output">Creating HIDS archive: myarchive.hids</div>
+                <div class="cli-output">Files: 2</div>
+                <div class="cli-output">Compressing: 2/2 (100%)</div>
+                <div class="cli-success">HIDS archive created successfully!</div>
+                
+                <div class="cli-line">
+                    <span class="prompt">C:\></span> 
+                    <span class="command">hidextract.exe -x myarchive.hids output/</span>
+                </div>
+                <div class="cli-output">Extracting HIDS archive: myarchive.hids</div>
+                <div class="cli-output">Output directory: output/</div>
+                <div class="cli-output">Extracting: 2/2 (100%)</div>
+                <div class="cli-success">HIDS archive extracted successfully!</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 HidExtract - Hidden Archive Systems</p>
+                <p class="footer-tagline">THE FUTURE OF COMPRESSION IS HIDDEN</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
